@@ -1,0 +1,243 @@
+---
+# Do not remove the triple dashes
+---
+@charset "utf-8";
+
+//
+// Set color scheme
+//
+
+{% if site.color_scheme == "one" %}
+  $color: #17baef;
+  $color-2: #eebf3f;
+{% elsif site.color_scheme == "two" %}
+  $color: #b4ca65;
+  $color-2: #dd7c4f;
+{% elsif site.color_scheme == "three" %}
+  $color: #6690b9;
+  $color-2: #f46fa3;
+{% elsif site.color_scheme == "four" %}
+  $color: #50c8c9;
+  $color-2: #ffbe57;
+{% else %}
+  $color: #6690b9;
+  $color-2: #dd9d71;
+{% endif %}
+
+//
+// Import partials from `_sass` folder
+//
+
+@import "default";
+
+//
+// Insert custom css below this line
+//
+
+.disabled-link {
+  pointer-events: none;
+}
+.logo-title:hover {
+  text-decoration: none;
+}
+.promo .title {
+  font-size: 65px;
+  color: $color;
+  margin-top: 0;
+}
+.btns {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.promo .meta {
+    margin-top: 30px;
+}
+.donorbox {
+  margin-top: 60px;
+}
+.join-us-intro {
+  margin-top: 0;
+  color: #ddd !important;
+  text-align: center;
+}
+.highlight {
+  color: $color*2 !important;
+}
+.promo .social-icons a {
+    display: inline-block;
+    background: darken($color, 20%);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-right: 8px;
+    float: left;
+}
+.btn-outline, .btn-outline:link, .btn-outline:visited {
+    background-color: transparent;
+    border-radius: 5px;
+    &.btn-outline-primary {
+      border: 2px solid $color;
+      color: $color;
+    }
+    &.btn-outline-secondary {
+      border: 2px solid $color-2;
+      color: $color-2;
+    }
+    &.btn-outline-medium {
+      border: 2px solid darken($color, 15%);
+      color: darken($color, 15%);
+    }
+}
+.btn-outline:hover {
+    color: #fff !important;
+    &.btn-outline-primary {
+      background-color: $color;
+    }
+    &.btn-outline-secondary {
+      background-color: $color-2;
+    }
+    &.btn-outline-medium {
+      background-color: darken($color, 15%);
+    }
+}
+.features .form-inline {
+  margin-top: 10px;
+}
+.ele-hide{
+  display: none;
+}
+ele.show{
+  display: block;
+}
+/* Add basic styling for the carousel */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+  max-height: 800px;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+#eventphotos .carousel-slide {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.leadership {
+  padding: 15px 0px;
+}
+.leadership .role{
+  font-weight: bold;
+}
+.leadership .leader{
+  font-weight: bold;
+}
+.leadership .intro{
+  padding: 0px 0px;
+  float: none;
+}
+.standard-padding {
+  padding: 10px 0px;
+}
+.eventphotos {
+  height: 200px;
+}
+/* Three columns side by side */
+.column {
+  margin-bottom: 16px;
+  padding: 0 10px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+#site-name {
+  width: 200px;
+  position: relative;
+  text-decoration: none;
+}
+
+.dp-container {
+  width: 40%;
+  padding: 10px 20px;
+  float: right;
+}
+.dp {
+  border-radius: 50%;
+}
+.dp-name{
+  padding: 20px;
+  width: 60%;
+}
+.event {
+  padding: 10px 0px;
+}
+.event-register{
+  padding: 20px 0px;
+  text-decoration: double;
+  font-weight: bold;
+  color: $color*5;
+}
