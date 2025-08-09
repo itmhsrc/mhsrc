@@ -62,8 +62,8 @@ events:
   - name: Independence Day
     description: >
       Mountain House Sports and Recreation Club is celebrating India Independence Day on August 17th At Central Community Park, 25 Main St, Mountain House, CA 95391.<br>
-      <br><b>Contacts: </b><br>
-        - <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
+      <br><b>Mail Us: </b>
+        <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
     date: 08/17/2025 4:00 PM
     Contacts: 
       - Venu (208-596-9345)
@@ -82,8 +82,8 @@ events:
       <b>Payment Methods:</b><br>
       Zelle or PayPal : mhsrc.org@gmail.com<br>
       Check payable to "MHSRC"<br>
-      <br><b>Contacts: </b><br>
-        - <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
+      <br><b>Mail Us: </b>
+        <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
     date: 09/13/2025 8:00 AM
     registration_deadline: Saturday, September 6th 2025
     Contacts: 
@@ -99,9 +99,9 @@ leadership:
     intro: >
       Suresh Vuyyuru, the visionary behind MHSRC, founded the club in 2020 with a mission to build a strong, inclusive community through sports and cultural activities. He leads the organization with a focus on strategic growth, ensuring that MHSRC continues to serve the Mountain House community effectively.
   - role: President
-    name: Srinivas Veeramallu
+    name: 
     intro: >
-      Srinivas Veeramallu plays a critical role in the day-to-day operations of MHSRC, driving the club's initiatives and ensuring that all programs align with its mission. As President, he is responsible for guiding the team in executing successful events and programs.
+      President plays a critical role in the day-to-day operations of MHSRC, driving the club's initiatives and ensuring that all programs align with its mission. As President, he is responsible for guiding the team in executing successful events and programs.
   - role: Vice President
     name: Shravan Yampaty
     photo: shravan.jpeg
@@ -157,7 +157,6 @@ leadership:
       Santosh Mahajan supports the leadership team with his experience and commitment, helping to drive the club's mission and ensure the successful execution of its events.
 
 event_photos:
-  - Flyer_5_29_2025.jpg
   - AMR_3620.jpg
   - AMR_3625.jpg
   - AMR_3236.jpg
@@ -170,6 +169,7 @@ event_photos:
   - AMR_3601.jpg
   - AMR_3603.jpg
 more_photos:
+  - Flyer_5_29_2025.jpg
   - AMR_3620.jpg
   - AMR_3625.jpg
   - AMR_3236.jpg
