@@ -206,10 +206,12 @@ layout: default
           </div>
           <div class="event">
             <b>Event Date: </b>{{ event.date }}
-          </div>         
-          <div class="event">
-            <b>Registration deadline:</b> {{ event.registration_deadline }}
-          </div>
+          </div> 
+          {% if event.registration_deadline %}
+            <div class="event">
+              <b>Registration deadline:</b> {{ event.registration_deadline }}
+            </div>
+          {% endif %}
           <div class="event-register">
            <a target="_blank" href="{{ event.registration_url }}">Register Now</a>
           </div>
