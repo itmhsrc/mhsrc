@@ -59,38 +59,20 @@ custom:
     Recreational Activities: Our recreational programs include fitness classes, art workshops, and more. We offer opportunities for personal growth and leisure, helping everyone in our community stay active and engaged.
 
 events:
-  - name: Independence Day
-    description: >
-      Mountain House Sports and Recreation Club is celebrating India Independence Day on August 17th At Central Community Park, 25 Main St, Mountain House, CA 95391.<br>
-      <br><b>Mail Us: </b>
-        <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
-    date: 08/17/2025 4:00 PM
-    Contacts: 
-      - Venu (208-596-9345)
-      - Murali (408-806-3274)
-    registration_url: https://tinyurl.com/mhsrcvendors2025
-    poster: Flyer_5_29_2025.jpg
   - name: Volleyball & Throwball Tournament
     description: >
-      Mountain House Sports and Recreation Club Organizing Volleyball & Throwball Tournament on September 13th At Cordes Village Park, 225 E Ramsey Drive, Mountain House, CA 95391.<br>
+      Mountain House Sports and Recreation Club Organizing Local Business Expo on October 11th At MHHS Parking Lot, 1090 S. Central Parkway, Mountain House, CA 95391.<br>
+      Please <a href="https://tinyurl.com/mhsrcexpo2025"> register</a> to setup your booth and socialize your business.  
+      You must be a business or organization operating in Mountain House or Tracy.
       <br>We are a non-profit charity organization under section 501 (c)(3) - EIN 93-2235954  - so donors can claim tax benefit. <br>
-      <br>
-      <b>Registration Fees:</b><br>
-      Volley Ball : $160<br>
-      Throw Ball: $180<br>
-      <br>
-      <b>Payment Methods:</b><br>
-      Zelle or PayPal : mhsrc.org@gmail.com<br>
-      Check payable to "MHSRC"<br>
       <br><b>Mail Us: </b>
-        <a href="mailto:contactus@mhsrclub.org">Contact</a><br>
-    date: 09/13/2025 8:00 AM
-    registration_deadline: Saturday, September 6th 2025
+        <a href="mailto:events@mhsrclub.org">Contact</a><br>
+    date: 10/11/2025 10:00 AM to 7:00 PM
     Contacts: 
       - Rupesh (309-749-8074)
       - Krishnan (404-200-6892)
-    registration_url: https://tinyurl.com/mhsrc2025
-    poster: MHSRC_Volley2024.jpg
+    registration_url: https://tinyurl.com/mhsrcexpo2025
+    poster: business.jpeg
 
 leadership:
   - role: Founder & Chairman
