@@ -92,7 +92,42 @@ layout: default
     <div class="standard-padding text-justified">{{ site.custom.activities }}</div>
   </div><!--//container-->
 </section><!--//about-->
-<!-- ******ABOUT****** -->
+<!-- ******EVENTS****** -->
+<section id="events" class="events section">
+  <div class="container">
+    <h2 class="title text-center">Events</h2>
+    {% for event in site.events %}
+    <div class="accordion-section">
+      <div class="accordion-header">
+        <h3 class="highlight">{{ event.name }}</h3>
+      </div>
+      <div class="accordion-content row">
+        <div class="col-sm-12 col-md-8">
+          <img src="assets/images/{{ event.poster }}" alt="Image 1">
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="event">
+            <p> {{ event.description }}</p>
+          </div>
+          <div class="event">
+            <b>Event Date: </b>{{ event.date }}
+          </div> 
+          {% if event.registration_deadline %}
+            <div class="event">
+              <b>Registration deadline:</b> {{ event.registration_deadline }}
+            </div>
+          {% endif %}
+          <div class="event-register">
+           <a target="_blank" href="{{ event.registration_url }}">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div><!--//container-->
+  </div><!--//container-->
+</section><!--//Events-->
+<!-- ******Photos****** -->
 <section id="photos" class="more-photos section"> <!--more photos-->
   <div class="carousel-container">
     <div class="carousel">
@@ -187,41 +222,6 @@ layout: default
     </div>
   </div><!--//container-->
 </section><!--//join-->
-<!-- ******EVENTS****** -->
-<section id="events" class="events section">
-  <div class="container">
-    <h2 class="title text-center">Events</h2>
-    {% for event in site.events %}
-    <div class="accordion-section">
-      <div class="accordion-header">
-        <h3 class="highlight">{{ event.name }}</h3>
-      </div>
-      <div class="accordion-content row">
-        <div class="col-sm-12 col-md-8">
-          <img src="assets/images/{{ event.poster }}" alt="Image 1">
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="event">
-            <p> {{ event.description }}</p>
-          </div>
-          <div class="event">
-            <b>Event Date: </b>{{ event.date }}
-          </div> 
-          {% if event.registration_deadline %}
-            <div class="event">
-              <b>Registration deadline:</b> {{ event.registration_deadline }}
-            </div>
-          {% endif %}
-          <div class="event-register">
-           <a target="_blank" href="{{ event.registration_url }}">Register Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div><!--//container-->
-  </div><!--//container-->
-</section><!--//Events-->
 <!-- ******ABOUT****** -->
 {% assign postsPerPage = 3 %}
 {% assign numPages = site.leadership | size | divided_by: postsPerPage %}
